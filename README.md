@@ -1,4 +1,4 @@
-# Portfolio# Marco A. Ramos Jr.  
+# Marco A. Ramos Jr.  
 *Legislative Analyst | Equity Researcher | JD-Track Education-Law Scholar*
 
 > _Data only matter when they move resources toward students who have historically been denied them._
@@ -6,7 +6,7 @@
 ---
 
 ## 📄 Downloads
-* **Résumé (2 pg) →** [Ramos_Resume.pdf](./Ramos_Resume.pdf)  
+* **Curriculum Vita (PDF) →** [Ramos_CV.pdf](./Ramos_CV.pdf)  
 * **Mini-Portfolio (optional) →** [Ramos_MiniPortfolio.pdf](./Ramos_MiniPortfolio.pdf)
 
 ## 📊 Featured Visual
