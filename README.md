@@ -1,7 +1,7 @@
 # Marco A. Ramos Jr.  
 *Legislative Analyst | Equity Researcher | JD-Track Education-Law Scholar*
 
-> _Data only matter when they move resources toward students who have historically been denied them._
+> _Equity-driven research must not only expose disparities—it must fuel action._
 
 ---
 
