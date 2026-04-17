@@ -1,24 +1,27 @@
 /* GLOBAL RESET */
-/* GLOBAL RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* THE TREES - Applied to the whole site for consistency */
 body, html {
     height: 100%;
     font-family: 'Inter', sans-serif;
     color: white;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    background-color: #013220;
+}
+
+/* BASE TREES - Background for the whole site */
+.tree-bg {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
                 url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=2560');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* HOME PAGE - Perfectly Centered */
+/* HOME PAGE - Hero view */
 .hero-wrapper {
     height: 85vh;
     display: flex;
@@ -27,26 +30,28 @@ body, html {
     text-align: center;
 }
 
-/* --- INTERNAL PAGES (CONTENT MODE) --- */
+/* INTERNAL PAGES - Deep shading and centering */
 .page-wrapper {
     min-height: 100vh;
     width: 100%;
-    /* Standardized background shading - matched to About/Connect */
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+    /* Darkening the trees for internal pages */
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
                 url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=2560');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 50px 20px 150px 20px;
-}
+    padding: 60px 20px 150px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .glass-box {
-    max-width: 1000px;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.8); /* Solid dark contrast */
+    width: 100%;
+    max-width: 1000px; /* Centering fixed here */
+    background: rgba(0, 0, 0, 0.8); 
     padding: 50px;
     border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 }
 
 /* TYPOGRAPHY */
@@ -80,10 +85,21 @@ p { margin-bottom: 20px; line-height: 1.8; font-weight: 300; }
     letter-spacing: 2px;
     transition: all 0.3s ease;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .btn:hover, .btn-active { background-color: white; color: #013220; border-color: white; }
 
 /* GRIDS */
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-top: 30px; }
-.card { background: rgba(255,255,255,0.08); padding: 30px; border: 1px solid rgba(255,255,255,0.1); }
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 25px; 
+    margin-top: 30px; 
+}
+.card { 
+    background: rgba(255,255,255,0.08); 
+    padding: 30px; 
+    border: 1px solid rgba(255,255,255,0.1); 
+    height: 100%;
+}
