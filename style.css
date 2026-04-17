@@ -6,7 +6,8 @@
 }
 
 body, html {
-    height: 100%;
+    min-height: 100vh; /* Changed from height: 100% to prevent background clipping */
+    height: auto;
     font-family: 'Inter', sans-serif;
     color: white;
     background-color: #013220;
@@ -35,12 +36,14 @@ body, html {
 }
 
 /* INTERNAL PAGE SHADE (Darker & Centered) */
-.page-shade {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
-    min-height: 85vh;
+/* Combined both classes to ensure identical shading and centering across all internal pages */
+.page-shade, .page-wrapper {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)); 
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 60px 20px 150px 20px;
+    padding: 60px 20px 25vh 20px; /* 25vh bottom padding clears the footer so you can scroll */
+    width: 100%;
 }
 
 /* THE CONTAINER BOX (Centered) */
