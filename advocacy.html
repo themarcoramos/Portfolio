@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Infrastructure | Marco A. Ramos Jr.</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom Styles for this specific page */
+        .badge-container { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px; }
+        .badge { border: 1px solid #a8e6cf; color: #a8e6cf; padding: 6px 12px; border-radius: 20px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .flowchart { display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.05); padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; margin: 30px 0; flex-wrap: wrap; gap: 15px; }
+        .flow-node { background: #013220; border: 1px solid #a8e6cf; padding: 15px; border-radius: 5px; text-align: center; flex: 1; min-width: 150px; font-size: 0.9rem; color: #dcedc1; }
+        .flow-arrow { color: #a8e6cf; font-size: 1.5rem; font-weight: bold; }
+
+        .code-window { background: #1e1e1e; border-radius: 8px; overflow: hidden; margin: 30px 0; border: 1px solid #333; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .code-header { background: #2d2d2d; padding: 10px; display: flex; gap: 6px; border-bottom: 1px solid #444; }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot.red { background: #ff5f56; }
+        .dot.yellow { background: #ffbd2e; }
+        .dot.green { background: #27c93f; }
+        .code-body { padding: 20px; font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; color: #d4d4d4; overflow-x: auto; line-height: 1.6; }
+        .code-comment { color: #6a9955; font-style: italic; }
+        .code-keyword { color: #569cd6; }
+        .code-string { color: #ce9178; }
+        .code-func { color: #dcdcaa; }
+    </style>
+</head>
+<body class="tree-background">
+    <div class="page-wrapper">
+        <div class="glass-box">
+            <h1>Digital Infrastructure & Systemic Equity</h1>
+            <p class="tagline" style="margin-bottom: 20px;">Architecting the technical and legal pipes that redefine the social contract.</p>
+            <p style="font-style:italic; border-left: 3px solid #a8e6cf; padding-left: 15px; margin-bottom: 40px;">
+                "Advocacy is only as strong as its distribution. I built the technical infrastructure that delivered high-stakes policy analysis into the hands of grassroots leaders in real-time."
+            </p>
+
+            <h2>Legislative Infrastructure</h2>
+            <div style="margin-bottom: 30px;">
+                <h3 style="margin-top: 20px;">CAMHPRO</h3>
+                <p>Overhauling organizational web code to deliver the "Handcuffs Aren’t Housing" toolkit across 58 counties, ensuring full WCAG 2.1 accessibility and widespread distribution.</p>
+                <a href="toolkit.pdf" target="_blank" class="btn" style="margin-bottom: 15px;">Download Advocacy Toolkit</a>
+
+                <h3 style="margin-top: 30px;">Big Brothers Big Sisters (BBBS)</h3>
+                <p>Using Replit to architect an automated recruitment pipeline, scaling the organization’s ability to serve underrepresented neighborhoods efficiently.</p>
+            </div>
+
+            <div class="flowchart">
+                <div class="flow-node">Legislative Bill<br><span style="font-size:0.75rem; opacity:0.7;">Statutory Framework</span></div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-node">Policy-Tech Processing<br><span style="font-size:0.75rem; opacity:0.7;">Python / Replit</span></div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-node">Accessible Toolkit<br><span style="font-size:0.75rem; opacity:0.7;">WCAG 2.1 Delivery</span></div>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                </div>
+                <div class="code-body">
+<pre>
+<span class="code-comment"># Sanitized Logic: Advocacy Distribution Pipeline</span>
+<span class="code-keyword">def</span> <span class="code-func">process_legislative_toolkit</span>(bill_data, target_counties):
+    <span class="code-keyword">try</span>:
+        <span class="code-comment"># Parse complex statutory language</span>
+        parsed_data = parse_statutes(bill_data)
+        
+        <span class="code-comment"># Ensure WCAG 2.1 Compliance for accessibility</span>
+        compliant_assets = apply_accessibility_standards(parsed_data)
+        
+        <span class="code-comment"># Distribute to localized grassroots endpoints</span>
+        <span class="code-keyword">for</span> county <span class="code-keyword">in</span> target_counties:
+            dispatch_to_network(county, compliant_assets)
+            
+        <span class="code-keyword">return</span> <span class="code-string">"Distribution Successful across 58 Counties"</span>
+        
+    <span class="code-keyword">except</span> Exception <span class="code-keyword">as</span> e:
+        <span class="code-func">log_error</span>(<span class="code-string">f"Pipeline failure: {e}"</span>)
+</pre>
+                </div>
+            </div>
+
+            <h2>Digital Divide & Literacy</h2>
+            <div style="margin-bottom: 40px;">
+                <h3 style="margin-top: 20px;">Superior Court of California</h3>
+                <p>Auditing judicial administrative workflows for a 5,000+ litigant caseload to mitigate bottlenecks and translating complex codes into accessible digital guidance.</p>
+
+                <h3 style="margin-top: 20px;">Cyber-Seniors</h3>
+                <p>Spearheading compliance audits and technical training frameworks to ensure older adults can navigate an increasingly digital world safely and effectively.</p>
+
+                <h3 style="margin-top: 20px;">Pro-Bono Work</h3>
+                <p>Providing technical architecture for nonprofits to ensure their missions have a modern, accessible digital home.</p>
+            </div>
+
+            <h2>Impact Summary</h2>
+            <p><strong>The Result:</strong> By modernizing these "digital pipes," I helped preserve <strong>$60M in funding</strong> for mental health infrastructure and ensured that the most complex statutory frameworks are reachable by the people who need them most.</p>
+
+            <div class="badge-container">
+                <span class="badge">Full-Stack Web Dev</span>
+                <span class="badge">Replit</span>
+                <span class="badge">Python / Pandas</span>
+                <span class="badge">WCAG 2.1 Compliance</span>
+                <span class="badge">User-Centered Design</span>
+            </div>
+
+        </div>
+    </div>
+    
+    <footer class="mission-control">
+        <nav class="nav-buttons">
+            <a href="index.html" class="btn">HOME</a>
+            <a href="portfolio.html" class="btn btn-active">PORTFOLIO</a>
+            <a href="cv.pdf" target="_blank" class="btn">CV</a>
+            <a href="about.html" class="btn">ABOUT</a>
+            <a href="connect.html" class="btn">CONNECT</a>
+        </nav>
+    </footer>
+</body>
+</html>
